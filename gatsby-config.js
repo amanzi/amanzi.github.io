@@ -1,7 +1,6 @@
 require(`dotenv`).config()
 
 module.exports = {
-  pathPrefix: `/`,
   siteMetadata: {
     title: `Amanzi-ATS`,
     author: `Daniel Livingston, David Moulton`,
@@ -12,23 +11,23 @@ module.exports = {
     headerLinks: [
       {
         title: `Home`,
-        path: `./`,
+        path: `/`,
       },
       {
         title: `About`,
-        path: `./about`,
+        path: `/about`,
       },
       {
         title: `Gallery`,
-        path: `./gallery`,
+        path: `/gallery`,
       },
       {
         title: `References`,
-        path: `./references`,
+        path: `/references`,
       },
       {
         title: `Downloads`,
-        path: `./downloads`,
+        path: `/downloads`,
       },
     ],
     footerLinks: [
