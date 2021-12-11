@@ -145,4 +145,6 @@ with them. Please open an issue or [email me](mailto:livingston@lanl.gov) if
 you're having difficulties. 99 times of 100, the solution will be straightforward
 yet hidden from those without intimate knowledge of React.
 
+# Developer Notes
 
+Additional notes for site developers can be found in [`DEVELOPER_NOTES.md`](DEVELOPER_NOTES.md).
