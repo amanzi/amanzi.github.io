@@ -1,3 +1,24 @@
+# Installation
+
+This website is built with [Gatsby](https://gatsbyjs.com), a static site generator with Markdown-based websites and a rich ecosystem of plugins.
+
+## Directory Overview
+
+```sh
+$ tree -L 1
+.
+├── assets              # Website assets: favicon, logo, etc.
+├── CHANGELOG.md
+├── content             # Markdown/webpage 'home'
+├── gatsby-config.js    # Sitewide configuration file
+├── INSTALLATION.md
+├── package.json        # Website dependencies: uses Yarn to install
+├── README.md
+├── src                 # Theme & custom components source files
+├── static              # static files: PDFs, BibTeX, etc.
+└── yarn.lock           # Locks dependencies to specific version
+```
+
 ## Installing Dependencies
 ##### Instructions sourced from [the Gatsby documentation](https://www.gatsbyjs.com/docs/tutorial/part-0/#set-default-nodejs-version).
 
@@ -50,8 +71,6 @@ site's data and schema
 ```
 
 Navigate to [http://localhost:8000/](http://127.0.0.1:8000/) to view the website.
-
-
 
 ### Production Version
 
