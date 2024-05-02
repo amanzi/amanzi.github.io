@@ -1,6 +1,7 @@
 require(`dotenv`).config()
 
 module.exports = {
+  pathPrefix: "/master",
   siteMetadata: {
     title: `Amanzi-ATS`,
     author: `Daniel Livingston, David Moulton`,
