@@ -6,7 +6,7 @@ module.exports = {
     title: `Amanzi-ATS`,
     author: `Daniel Livingston, David Moulton`,
     description: `Landing page for Amanzi-ATS`,
-    siteUrl: process.env.SITE_URL,
+    siteUrl: 'https://github.com/amanzi/amanzi.github.io.git',
     logo: `logo.png`,
     copyright: `© 2020 Amanzi-ATS Contributing National Labs (LANL, LBNL, ORNL, PNNL)`,
     headerLinks: [
