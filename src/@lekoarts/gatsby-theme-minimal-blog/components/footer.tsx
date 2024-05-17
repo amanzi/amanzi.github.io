@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Link, Container, Box, Flex , Grid} from "theme-ui"
+import { jsx, Link, Container, Box, Flex , Grid, Text} from "theme-ui"
 import { theme} from "/src/@lekoarts/gatsby-theme-minimal-blog/gatsby-plugin-theme-ui/index.ts"
 
 
@@ -25,8 +25,8 @@ const Footer = () => {
         <div style={{ fontSize: '12px' }}>&copy; {new Date().getFullYear()} Amanzi-ATS Contributing National Labs (LANL, LBNL, ORNL, PNNL)</div>
       </Box>
 
-      <Box  sx={{ flex: 1 }}>
-        <h3> Overview </h3>
+      <Box  sx={{ flex: 1, fontSize: '18px' }}>
+        <div><Text children={`Overview`} sx={{ fontSize: [3], color: `heading` }}/></div>
         <div><Link aria-label="Home" href="/"> Home </Link></div>
         <div><Link aria-label="About" href="/about"> About </Link></div>
         <div><Link aria-label="Gallery" href="/gallery"> Gallery </Link></div>
@@ -34,14 +34,14 @@ const Footer = () => {
         <div><Link aria-label="Downloads" href="/downloads"> Downloads </Link></div>
       </Box>
   
-      <Box  sx={{ flex: 1 }} >
-        <h3> AMANZI </h3>
+      <Box  sx={{ flex: 1, fontSize: '18px' }} >
+        <div><Text children={`Amanzi`} sx={{ fontSize: [3], color: `heading` }}/></div>
         <div><Link aria-label="GitHub" href="https://github.com/amanzi/amanzi"> GitHub </Link></div>
         <div><Link aria-label="Documentation" href="https://amanzi.github.io/amanzi"> Documentation </Link></div>
       </Box>
 
-      <Box sx={{ flex: 1 }}>
-      <h3> ATS </h3>
+      <Box sx={{ flex: 1, fontSize: '18px' }}>
+      <div><Text children={`ATS`} sx={{ fontSize: [3], color: `heading` }}/></div>
       <div><Link aria-label="GitHub" href="https://github.com/amanzi/ats"> GitHub </Link></div>
       <div><Link aria-label="Documentation" href="https://amanzi.github.io/ats"> Documentation </Link></div>
       </Box>
