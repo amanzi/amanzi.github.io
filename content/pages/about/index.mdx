@@ -1,27 +1,34 @@
 ---
-title: About
-excerpt: ok
+title: ' '
+content: Managing Complexity to Accelerate Understanding
+slug: "/about"
 ---
 
-<PageHeader 
-  heading="About Amanzi-ATS"
-  lead="Managing Complexity to Accelerate Understanding"
-/>
+import "/src/components/image-gallery/styles.css"
+import { Flex, Box, Container, jsx, get } from "theme-ui"
 
-<Section>
-<Div style={{
-  maxWidth: ["none", "none", "80%"]
-}}>
+<Flex>
+  <Box p={2} sx={{ flex: 3 }}>
+    <div>
+      <Text children={`About Amanzi-ATS.`} sx={{ fontSize: [6], fontWeight: `bold`, color: `heading` }}/>
+  </div>
+  <div>
+      <Text children={`Managing Complexity to Accelerate Understanding`} sx={{ fontSize: [4], color: `subheading` }} />
+  </div>
+  </Box>
+  <Box p={2} sx={{ flex: 1 }}>
+    <div className="gallery-img">
+      <a href="https://int.lanl.gov/news/news_stories/2020/september/0929-rd-100-finals.shtml?source=topnews ">
+      <img src="/photo-gallery/thumbnails/RD100_2020_Winner_Logo_Color.png" alt="R&D 100" style={{ width: '50%', height: 'auto' }} /></a>
+    </div>
+  </Box>
+</Flex>
 
-<div style="clear: both;">
-  <a href="https://ess.science.energy.gov/amanzi-ats-team-wins-rd-100-award-for-environmental-simulation-code/" style="float: right; margin-left: 50px; margin-top: 50px;">
-    <img src="photo-gallery/thumbnails/RD100_2020_Winner_Logo_Color.png" alt="R&D 100" class="gallery-img" style="transition: transform 0.3s ease-in-out; height: 250px;" />
-  </a>
+___
 
-  <h3> Amanzi </h3>
+### Amanzi
 
-  <p>Amanzi provides a flexible and extensible parallel flow and reactive transport simulation capability for environmental applications.  It includes general polyhedral mesh infrastructure, which leverages MSTK, advanced discretizations of process models, including traditional finite volume schemes, mimetic finite differences, and nonlinear finite volumes.  In addition, it provides advanced nonlinear solvers, such as Nonlinear Krylov Acceleration (NKA) and Anderson Acceleration, and leverages Trilinos-ML and Hypre Algebraic Multigrid for scalable solvers. The reaction of contaminants and minerals carried by the flow through the surrounding rock and soil is modeled through a general software interface called Alquimia that allows Amanzi to interface with a variety of powerful geochemistry engines including PFLOTRAN and CrunchFlow. The code is parallel and leverages open-source parallel frameworks such as Trilinos, PETSc.  Amanzi has been used to model contaminant migration at various DOE waste sites (e.g., Nevada National Security Site, and Savannah River), and is generally applicable to groundwater contaminant migration under partially saturated, nonisothermal conditions and its interaction with surface water.</p>
-</div>  
+Amanzi provides a flexible and extensible parallel flow and reactive transport simulation capability for environmental applications.  It includes general polyhedral mesh infrastructure, which leverages MSTK, advanced discretizations of process models, including traditional finite volume schemes, mimetic finite differences, and nonlinear finite volumes.  In addition, it provides advanced nonlinear solvers, such as Nonlinear Krylov Acceleration (NKA) and Anderson Acceleration, and leverages Trilinos-ML and Hypre Algebraic Multigrid for scalable solvers. The reaction of contaminants and minerals carried by the flow through the surrounding rock and soil is modeled through a general software interface called Alquimia that allows Amanzi to interface with a variety of powerful geochemistry engines including PFLOTRAN and CrunchFlow. The code is parallel and leverages open-source parallel frameworks such as Trilinos, PETSc.  Amanzi has been used to model contaminant migration at various DOE waste sites (e.g., Nevada National Security Site, and Savannah River), and is generally applicable to groundwater contaminant migration under partially saturated, nonisothermal conditions and its interaction with surface water.
 
 ### Arcos and Meshing Workflows
 
@@ -34,8 +41,4 @@ The Advanced Terrestrial Simulator is a code for solving ecosystem-based, integr
 ### Open Source / Open Development
 
 Amanzi-ATS is jointly developed by LANL, LBNL, and PNNL, and ORNL as an open source project under the three-clause BSD license.
-
-
-</Div>
-</Section>
 

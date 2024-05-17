@@ -1,22 +1,30 @@
 ---
-title: Home
-excerpt: Amanzi-ATS Home
-is_front: true
+title: ' '
+slug: "/"
 ---
 
-<Billboard
-  heading="Amanzi-ATS"
-  subHeading="Manage Complexity"
-  lead="Accelerate Understanding"
-/>
+import "/src/components/billboard/styles.css"
+import { Grid, Box, Container, jsx, get , Button} from "theme-ui"
 
-<Section 
-  heading="What is Amanzi-ATS?"
-  defaultPadding
->
-<Div style={{
-  maxWidth: ["none", "none", "80%"]
-}}>
+
+<div className="circle-container">
+  <img src="/images/billboard/barrow.png" alt="Description of image 1" />
+  <img src="/images/billboard/coweeta.png" alt="Description of image 2" />
+  <img src="/images/billboard/dfn.png" alt="Description of image 2" />
+  <img src="/images/billboard/dfn2.png" alt="Description of image 2" />
+  <img src="/images/billboard/farea.png" alt="Description of image 2" />
+  <img src="/images/billboard/nnss.png" alt="Description of image 2" />
+  <div className="text-center">
+    <b> Manage Complexity </b>
+      <h1>Amanzi-ATS</h1>
+      Accelerate Understanding
+  </div>
+</div>
+
+<div>
+---
+
+# What is Amanzi-ATS?
 
 ### About Amanzi
 
@@ -39,15 +47,36 @@ and make predictions.
 The Advanced Terrestrial Simulator is a code for solving ecosystem-based, integrated, distributed hydrology. It builds on the multi-physics framework and toolsets (mesh infrastructure, discretizations, solvers) provided by Amanzi. The ATS has been used to model thermal integrated (surface/subsurce) hydrology in polygonal Arctic tundra, integrated hydrology in pristine and watersheds (e.g., East River Watershed, CO), and to explore the impact of disturbances such as wildfire, on watershed function.
 
 
+</div>
 
-</Div>
-</Section>
+<Box sx={{
+      background: 'muted', 
+      marginLeft: '-50vw',
+      marginRight: '-50vw',
+      mb: -5,
+      pb: 5,
+      pt: 5,
+      mt: 5,
+    }}>
 
-<Cta 
-  heading="Ready to get started?"
-  lead="Visit Amanzi-ATS on GitHub to download and build."
-  links={<Button url="https://amanzi.github.io/amanzi">Get Started</Button>}
-  style={{
-    bg: "muted"
-  }}
-/>
+  <Grid gap={2} columns={[2]} sx={{ marginLeft: '50vw', marginRight: '50vw',}}>
+      <Box>
+        <div>
+          <Text children={`Ready to get started?`} sx={{ fontSize: [4], fontWeight: `bold`, color: `heading` }}/>
+      </div>
+    </Box>
+      <Box></Box>
+      <Box>
+        <div>
+          <Text children={`Visit Amanzi on GitHub to download and build.`} sx={{ fontSize: [1], fontWeight: `bold`, color: `subheading` }}/>
+      </div>
+          <Button style={{ backgroundColor: '#0e6e9b', color: 'white' }} onClick={() => window.location.href = "https://amanzi.github.io/amanzi" }>Get Started</Button>
+      </Box>
+      <Box>
+      <div>
+          <Text children={`Visit ATS on GitHub to download and build.`} sx={{ fontSize: [1], fontWeight: `bold`, color: `subheading` }}/>
+      </div>
+      <Button style={{ backgroundColor: '#0e6e9b', color: 'white' }} onClick={() => window.location.href = "https://amanzi.github.io/ats" }>Get Started</Button>   
+      </Box>
+  </Grid>
+</Box>

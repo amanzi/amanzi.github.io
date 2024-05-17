@@ -1,64 +1,58 @@
 ---
-title: Downloads
-excerpt: ok
+title: ' '
+slug: "/downloads"
 ---
 
-<PageHeader 
-  heading="Downloads"
-  lead="Source and Docker distributions"
-/>
+import { Container, Flex, Box , Button} from 'theme-ui'
 
-<Section>
-<Div style={{
-  maxWidth: ["90%"],
-  minWidth: ["80%"]
-}}>
+<div>
+    <Text children={`Downloads`} sx={{ fontSize: [6], fontWeight: `bold`, color: `heading` }}/>
+</div>
+<div>
+    <Text children={`Source and Docker distributions`} sx={{ fontSize: [4], color: `subheading` }} />
+</div>
 
-<Grid columns={[1, 2]}>
-<Div>
+---
 
-## Amanzi
-### Source code
 
-<Button url="https://github.com/amanzi/amanzi/releases">
-Download: Latest Release
-</Button>
+<Flex>
+  <Container p={4} gap="10px" >
+    ## Amanzi
+  ### Source code
 
-### Git repository
+  <Button style={{ backgroundColor: '#0e6e9b', color: 'white' }} onClick={() => window.location.href = "https://github.com/amanzi/amanzi/releases"}>Download: Latest Release</Button>
 
-```sh
-$ git clone https://github.com/amanzi/amanzi.git
-```
+  ### Git repository
 
-### DockerHub
+  ```sh
+  $ git clone https://github.com/amanzi/amanzi.git
+  ```
 
-```sh
-$ docker pull metsi/amanzi:latest
-```
-</Div>
-<Div>
+  ### DockerHub
 
-## ATS
+  ```sh
+  $ docker pull metsi/amanzi:latest
+  ```
+  </Container>
 
-### Source code
+  <Container p={4} gap="10px" >
+    ## ATS
 
-<Button url="https://github.com/amanzi/ats/releases">
-Download: Latest Release
-</Button>
+  ### Source code
 
-### Git repository
+  <Button style={{ backgroundColor: '#0e6e9b', color: 'white' }} onClick={() => window.location.href = "https://github.com/amanzi/ats/releases"}>Download: Latest Release</Button>
 
-```sh
-$ git clone https://github.com/amanzi/ats.git
-```
+  ### Git repository
 
-### DockerHub
+  ```sh
+  $ git clone https://github.com/amanzi/ats.git
+  ```
 
-```sh
-$ docker pull metsi/ats:latest
-```
-</Div>
-</Grid>
-</Div>
-</Section>
+  ### DockerHub
+
+  ```sh
+  $ docker pull metsi/ats:latest
+  ```
+  </Container>
+</Flex>
 

@@ -1,19 +1,22 @@
 ---
-title: References
-excerpt: Amanzi-ATS publications and conference proceedings
+title: ' '
+slug: "/references"
 ---
 
-import bib1 from '!!raw-loader!../../../static/amanzi.bib';
-import bib2 from '!!raw-loader!../../../static/ats.bib';
+import BibTex from '/src/components/bibtex/BibTex.js'
+import bib1 from '!!raw-loader!/static/amanzi.bib'
+import bib2 from '!!raw-loader!../../../static/ats.bib'
 
 
-<PageHeader 
-  heading="References"
-  lead="Amanzi-ATS publications and conference proceedings"
-/>
+<div>
+    <Text children={`References`} sx={{ fontSize: [6], fontWeight: `bold`, color: `heading` }}/>
+</div>
+<div>
+    <Text children={`Amanzi-ATS publications and conference proceedings`} sx={{ fontSize: [4], color: `subheading` }} />
+</div>
 
-<Section>
-<Div style={{maxWidth: ["none", "none", "60%"]}}>
+---
+
 
 ### Amanzi
 
@@ -22,6 +25,3 @@ import bib2 from '!!raw-loader!../../../static/ats.bib';
 ### Advanced Terrestrial Simulator (ATS)
 
 <BibTex bibInput={bib2} template="harvard1" />
-
-</Div>
-</Section>
