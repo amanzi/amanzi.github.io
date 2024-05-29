@@ -1,0 +1,39 @@
+.circle-container {
+  margin-bottom: 450px; /* Adds margin around the container */
+  margin-top: 40px; /* Adds margin around the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 160px;
+  border-radius: 50%;
+  padding: 0;
+  position: relative;
+}
+
+.circle-container img {
+
+  margin: -3em;
+  width: 145px;
+  height: 145px;
+  border-radius: 50%; /* Makes image round */
+  border: solid 2px #0e6e9b;
+  position: absolute;
+}
+
+/* Calculate appropriate angles for 6 images (360/6 = 60 degrees per step) */
+.circle-container img:nth-child(1) { transform: rotate(0deg) translate(14em) rotate(0deg); }     /* 0 degrees */
+.circle-container img:nth-child(2) { transform: rotate(60deg) translate(14em) rotate(-60deg); }    /* 60 degrees */
+.circle-container img:nth-child(3) { transform: rotate(120deg) translate(14em) rotate(-120deg); }   /* 120 degrees */
+.circle-container img:nth-child(4) { transform: rotate(180deg) translate(14em) rotate(-180deg); }    /* 180 degrees */
+.circle-container img:nth-child(5) { transform: rotate(240deg) translate(14em) rotate(-240deg);}  /* 240 degrees */
+.circle-container img:nth-child(6) { transform: rotate(300deg) translate(14em) rotate(-300deg); }   /* 300 degrees */
+
+.text-center {
+  position: absolute; /* Overlay the text on the image circle */
+  width: 80%; /* Full width of the container */
+  text-align: center;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust vertical centering */
+  z-index: 10; /* Make sure text appears above the images */
+}

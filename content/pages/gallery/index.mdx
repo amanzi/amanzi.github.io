@@ -1,20 +1,21 @@
 ---
-title: Gallery
-excerpt: Amanzi-ATS figures and animations.
+title: ' '
+slug: "/gallery"
 ---
 
-import photoJSON from '../../../static/photo-gallery/gallery-metadata.json'
+import photoJSON from "/static/photo-gallery/gallery-metadata.json"
+import PhotoGallery from "/src/components/image-gallery/Gallery.js"
+import "/src/components/image-gallery/styles.css"
+import { Box, Grid} from "theme-ui"
 
-<PageHeader 
-  heading="Image Gallery"
-  lead="Amanzi-ATS Simulations for Environmental Applications"
-/>
+<div>
+    <Text children={`Image Gallery`} sx={{ fontSize: [6], fontWeight: `bold`, color: `heading` }}/>
+</div>
+<div>
+    <Text children={`Amanzi-ATS Simulations for Environmental Applications`} sx={{ fontSize: [4], color: `subheading` }} />
+</div>
 
-<Section>
-<Div style={{
-  maxWidth: ["none", "none", "80%"]
-}}>
-
+---
 ### Contaminant Transport at Legacy Waste Sites
 
 <PhotoGallery photos={photoJSON["photoGalleryRTM"]} />
@@ -30,7 +31,3 @@ import photoJSON from '../../../static/photo-gallery/gallery-metadata.json'
 ### Watersheds
 
 <PhotoGallery photos={photoJSON["photoGalleryWatersheds"]} />
-
-
-</Div>
-</Section>
