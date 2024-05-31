@@ -6,7 +6,7 @@ slug: "/gallery"
 import photoJSON from "/static/photo-gallery/gallery-metadata.json"
 import PhotoGallery from "/src/components/image-gallery/Gallery.js"
 import "/src/components/image-gallery/styles.css"
-import { Box, Grid} from "theme-ui"
+import { Box, Grid, Text } from "theme-ui"
 
 <div>
     <Text children={`Image Gallery`} sx={{ fontSize: [6], fontWeight: `bold`, color: `heading` }}/>
@@ -16,18 +16,17 @@ import { Box, Grid} from "theme-ui"
 </div>
 
 ---
-### Contaminant Transport at Legacy Waste Sites
 
-<PhotoGallery photos={photoJSON["photoGalleryRTM"]} />
+<PhotoGallery photos={photoJSON["photoGalleryRTM"]} title="Contaminant Transport at Legacy Waste Sites" />
 
-### Matrix-Fracture Flow and Transport
 
-<PhotoGallery photos={photoJSON["photoGalleryMF"]} />
 
-### Thermal Hydrology in the Arctic
+<PhotoGallery photos={photoJSON["photoGalleryMF"]} title="Matrix-Fracture Flow and Transport" />
 
-<PhotoGallery photos={photoJSON["photoGalleryArctic"]} />
 
-### Watersheds
 
-<PhotoGallery photos={photoJSON["photoGalleryWatersheds"]} />
+<PhotoGallery photos={photoJSON["photoGalleryArctic"]} title="Thermal Hydrology in the Arctic" />
+
+
+
+<PhotoGallery photos={photoJSON["photoGalleryWatersheds"]} title="Watersheds" />

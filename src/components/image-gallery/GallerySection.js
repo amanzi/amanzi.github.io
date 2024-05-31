@@ -3,7 +3,7 @@ import { LightBox } from "react-lightbox-pack";
 import "react-lightbox-pack/dist/style.css";
 import "./styles.css";
 
-const PhotoGallery = ({ photos, title }) => {
+const GallerySection = ({ gallery, title }) => {
   const [toggle, setToggle] = useState(false);
   const [sIndex, setSIndex] = useState(0);
 
@@ -19,11 +19,10 @@ const PhotoGallery = ({ photos, title }) => {
   };
 
   return (
-    <div >
-      <h2>{title}</h2>
+    <div>
       <div style={{ display: "flex", alignItems: "center", flexWrap: "wrap" }}>
-        {photos.map((item, index) => (
-          <div className="justified-gallery"
+        {gallery.map((item, index) => (
+          <div
             key={item.id}
             style={{ display: "inline-block", margin: "5px", cursor: "pointer" }}
             onClick={() => lightBoxHandler(true, index)}
@@ -32,10 +31,10 @@ const PhotoGallery = ({ photos, title }) => {
             role="button"
             aria-label={`View ${item.title}`}
           >
-            <img className="gallery-img"
+            <img 
               src={item.image}
               alt={item.title}
-              style={{ width: "199px" , height: "135px"}}
+              style={{ maxHeight: "25vh", maxWidth: "25vw" }}
             />
           </div>
         ))}
@@ -44,7 +43,7 @@ const PhotoGallery = ({ photos, title }) => {
       <LightBox
         state={toggle}
         event={lightBoxHandler}
-        data={photos.map((item) => ({
+        data={gallery.map((item) => ({
           id: item.id,
           image: item.image,
           title: item.title,
@@ -60,4 +59,4 @@ const PhotoGallery = ({ photos, title }) => {
   );
 };
 
-export default PhotoGallery;
+export default GallerySection;
