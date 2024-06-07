@@ -4,13 +4,15 @@
             "id": 1,
             "image": "/photo-gallery/Amanzi_DFN_fig1a.png",
             "title": "Amanzi DFN Figure 1(a)",
-            "thumbnail": "/photo-gallery/thumbnails/Amanzi_DFN_fig1a.png"
+            "thumbnail": "/photo-gallery/thumbnails/Amanzi_DFN_fig1a.png",
+            "description": "Amanzi DFN Figure 1(a)"
           },
           {
             "id": 2,
             "image": "/photo-gallery/Amanzi_DFN_fig2a.png",
             "title": "Amanzi DFN Figure 2(a)",
-            "thumbnail": "static/photo-gallery/thumbnails/Amanzi_DFN_fig2a.png"
+            "thumbnail": "static/photo-gallery/thumbnails/Amanzi_DFN_fig2a.png",
+            "description": "Amanzi DFN Figure 2(a)"
           }
     ],
 
@@ -19,25 +21,30 @@
             "id": 1,
             "image": "/photo-gallery/farea-composite-2006.png",
             "title": "F-Area Composite 2006",
-            "thumbnail": "/photo-gallery/thumbnails/farea-composite-2006.png"
+            "thumbnail": "/photo-gallery/thumbnails/farea-composite-2006.png",
+            "description": "F-Area Composite 2006"
           },
         {
             "id": 2,
             "image": "/photo-gallery/farea-composite-2026.png",
             "title": "F-Area Composite 2026",
-            "thumbnail": "/photo-gallery/thumbnails/farea-composite-2026.png"
+            "thumbnail": "/photo-gallery/thumbnails/farea-composite-2026.png",
+            "description": "F-Area Composite 2026"
+
         },
         {
             "id": 3,
             "thumbnail": "/photo-gallery/thumbnails/nnss-2030-blk.png",
             "image": "/photo-gallery/nnss-2030-blk.png",
-            "title": "NNSS 2030"
+            "title": "NNSS 2030",
+            "description": "NNSS 2030"
         },
         {
             "id": 4,
             "thumbnail": "/photo-gallery/thumbnails/nnss-2030-composite-blk.png",
             "image": "/photo-gallery/nnss-2030-composite-blk.png",
-            "title": "NNSS 2030 Composite"
+            "title": "NNSS 2030 Composite",
+            "description": "NNSS 2030 Composite"
         }
     ],
 
@@ -46,13 +53,15 @@
             "id": 1,
             "thumbnail": "/photo-gallery/thumbnails/barrow-movie-speed-0122-8k.png",
             "image": "/photo-gallery/barrow-movie-speed-0122-8k.png",
-            "title": "Barrow 01"
+            "title": "Barrow 01",
+            "description": "Barrow 01"
         },
         {
             "id": 2,
             "thumbnail": "/photo-gallery/thumbnails/barrow-movie-water-0122-8k.png",
             "image": "/photo-gallery/barrow-movie-water-0122-8k.png",
-            "title": "Barrow 02"
+            "title": "Barrow 02",
+            "description": "Barrow 02"
         }
     ],
 
@@ -61,7 +70,8 @@
             "id": 1,
             "thumbnail": "/photo-gallery/thumbnails/coweeta_steadystate_hires00001.png",
             "image": "/photo-gallery/coweeta_steadystate_hires00001.png",
-            "title": "Coweeta Steady-State"
+            "title": "Coweeta Steady-State",
+            "description": "Coweeta Steady-State"
         }
     ]
 }
